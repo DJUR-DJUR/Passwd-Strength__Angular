@@ -9,7 +9,7 @@ export const PasswdStrengthValidator = function (control: AbstractControl): Vali
     return null
   }
 
-  let hasCaseCharacters = /[A-Za-z]+/g.test(value);
+  let hasCaseCharacters = /[A-Za-zа-яёА-ЯЁ]+/g.test(value);
   let hasNumberCharacters = /[0-9]+/g.test(value);
   let hasSpecialCharacters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(value);
 
